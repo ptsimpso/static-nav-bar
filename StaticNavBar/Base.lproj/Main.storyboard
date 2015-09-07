@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XcY-71-52p">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--I'm unique!-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="StaticNavBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-LY-wpU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6lx-XX-Ltd"/>
+                                    <constraint firstAttribute="width" constant="65" id="O4m-zL-pk5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6lx-XX-Ltd"/>
+                                        <exclude reference="O4m-zL-pk5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6lx-XX-Ltd"/>
+                                        <include reference="O4m-zL-pk5"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="g7b-zI-vvO" kind="show" id="SH9-Vb-r97"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23346050646012195" green="0.84358183144306076" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jfw-LY-wpU" secondAttribute="centerX" id="eYH-61-Mws"/>
+                            <constraint firstAttribute="centerY" secondItem="jfw-LY-wpU" secondAttribute="centerY" id="hru-0e-cDC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jfw-LY-wpU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="eYH-61-Mws"/>
+                                <exclude reference="hru-0e-cDC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jfw-LY-wpU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="eYH-61-Mws"/>
+                                <include reference="hru-0e-cDC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="I'm unique!" id="GyK-Dn-QDv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="399"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="Kef-PB-i5t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XcY-71-52p" customClass="STNavController" customModule="StaticNavBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BRb-Xo-sL2" customClass="STNavBar" customModule="StaticNavBar" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.73003868999614796" green="0.71231799093484649" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="faM-xg-nZY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBI-CS-iCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="399"/>
+        </scene>
+        <!--I'm the same...-->
+        <scene sceneID="cWT-IF-OQG">
+            <objects>
+                <viewController id="g7b-zI-vvO" customClass="SecondViewController" customModule="StaticNavBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r6C-GK-sgO"/>
+                        <viewControllerLayoutGuide type="bottom" id="SyV-76-Btt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Osh-YS-DGl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-Sa-z68">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Um0-A7-B8m"/>
+                                    <constraint firstAttribute="width" constant="65" id="tg6-C9-Fmt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Um0-A7-B8m"/>
+                                        <exclude reference="tg6-C9-Fmt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Um0-A7-B8m"/>
+                                        <include reference="tg6-C9-Fmt"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="S66-MJ-Xjy" kind="show" id="iFh-dc-yFd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2683466658344219" green="1" blue="0.62252102830109524" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="PcG-Sa-z68" secondAttribute="centerX" id="0Hf-qb-PlI"/>
+                            <constraint firstAttribute="centerY" secondItem="PcG-Sa-z68" secondAttribute="centerY" id="lms-9z-lhi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PcG-Sa-z68"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0Hf-qb-PlI"/>
+                                <exclude reference="lms-9z-lhi"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PcG-Sa-z68"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0Hf-qb-PlI"/>
+                                <include reference="lms-9z-lhi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="I'm the same..." id="5RW-2c-f1d">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="4N5-wf-LCz"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gin-kA-rVJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="399"/>
+        </scene>
+        <!--I'm the same...-->
+        <scene sceneID="IRY-Oe-6lG">
+            <objects>
+                <viewController id="S66-MJ-Xjy" customClass="ThirdViewController" customModule="StaticNavBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HsD-j0-HJY"/>
+                        <viewControllerLayoutGuide type="bottom" id="dhw-Ct-xMV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g33-j4-71i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.61647947311906626" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="I'm the same..." id="nBw-II-zr3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="fid-JL-toF"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhS-UG-B4o" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2691" y="399"/>
+        </scene>
+    </scenes>
+</document>
